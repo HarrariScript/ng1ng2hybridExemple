@@ -20,9 +20,29 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "ng1/bower_components/bootstrap/dist/css/bootstrap.css",
+        "ng1/app.css",
+        "ng1/app.animations.css",
         "ng2/styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "ng1/bower_components/jquery/dist/jquery.js",
+        "ng1/bower_components/angular/angular.js",
+        "ng1/bower_components/angular-animate/angular-animate.js",
+        "ng1/bower_components/angular-resource/angular-resource.js",
+        "ng1/bower_components/angular-route/angular-route.js",
+        "ng1/app.module.js",
+        "ng1/app.config.js",
+        "ng1/app.animations.js",
+        "ng1/core/core.module.js",
+        "ng1/core/checkmark/checkmark.filter.js",
+        "ng1/core/phone/phone.module.js",
+        "ng1/core/phone/phone.service.js",
+        "ng1/phone-list/phone-list.module.js",
+        "ng1/phone-list/phone-list.component.js",
+        "ng1/phone-detail/phone-detail.module.js",
+        "ng1/phone-detail/phone-detail.component.js"
+      ],
       "environmentSource": "ng2/environments/environment.ts",
       "environments": {
         "dev": "ng2/environments/environment.ts",
