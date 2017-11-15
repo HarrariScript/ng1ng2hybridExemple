@@ -1,5 +1,7 @@
 # Ng1ng2hybridExemple
 
+in this project we will updrade this angularJs project https://github.com/angular/angular-phonecat
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
 ## Development server
