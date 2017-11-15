@@ -1,9 +1,10 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {NgModule,InjectionToken} from '@angular/core';
 import {UpgradeModule, downgradeComponent} from '@angular/upgrade/static';
 
 import {AppComponent} from './app.component';
 import {Ng2ExempleComponent} from './ng2-exemple/ng2-exemple.component';
+import {phoneServiceProvider} from './phones-service/phone.service';
 
 declare var angular: any;
 
@@ -26,7 +27,7 @@ angular.module('phonecatApp')
   entryComponents: [
     Ng2ExempleComponent
   ],
-  providers: [],
+  providers: [phoneServiceProvider],
   // bootstrap: [AppComponent]
 })
 export class AppModule {

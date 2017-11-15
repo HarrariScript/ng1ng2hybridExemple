@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Inject} from '@angular/core';
+import {PHONE_SERVICE} from '../phones-service/phone.service';
 
 @Component({
   selector: 'app-ng2-exemple',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng2-exemple.component.css']
 })
 export class Ng2ExempleComponent implements OnInit {
+  phones: any[] = [];
 
-  constructor() { }
+  constructor(@Inject(PHONE_SERVICE) private phoneService: any) { }
 
   ngOnInit() {
+    this.phones = this.phoneService.query();
   }
 
 }
