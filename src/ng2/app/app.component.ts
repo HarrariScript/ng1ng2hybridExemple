@@ -7,7 +7,7 @@ import {UpgradeModule} from '@angular/upgrade/static';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
+  title = 'ang1 / ang2 hybrid application ';
   constructor(private upgrade: UpgradeModule) { }
 
   ngOnInit() {

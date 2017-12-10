@@ -6,13 +6,6 @@ import {AppComponent} from './app.component';
 import {Ng2ExempleComponent} from './ng2-exemple/ng2-exemple.component';
 import {phoneServiceProvider} from './phones-service/phone.service';
 
-declare var angular: any;
-
-angular.module('phonecatApp')
-  .directive(
-    'ng2Ex',
-    downgradeComponent({component: Ng2ExempleComponent})
-  );
 
 
 @NgModule({
@@ -23,9 +16,6 @@ angular.module('phonecatApp')
   imports: [
     BrowserModule,
     UpgradeModule
-  ],
-  entryComponents: [
-    Ng2ExempleComponent
   ],
   providers: [phoneServiceProvider],
   bootstrap: [AppComponent]
